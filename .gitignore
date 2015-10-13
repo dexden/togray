@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+#include<conio.h>
+  
+int main ()
+{
+	
+int a[20]; 
+      int say,i=0;
+      printf("Lutfen 0 ile 255 arasi bir sayi giriniz\n"); 
+      scanf("%d",&say); 
+      while(say>0) 
+      { 
+           a[i]=say%2;
+           if(a[i]=0){
+x=x+pow(2,i);
+		   }
+ 
+           i++; 
+           say=say/2;
+      }
+      
+		
+            getch();  
+    int  gray;
+ 
+    
+    
+    gray = donustur(x);
+        }
+ 
+int donustur(int e)
+{
+    int c, d, sonuc = 0, k = 0;
+ 
+    while (e != 0)
+    {
+        c = e % 10;
+        bin = e / 10;
+        d = e % 10;
+        if ((c && !d) || (!c && d))
+        {
+            sonuc = sonuc + pow(10, k);
+        }
+        k++;
+    }
+    return sonuc;
+}
